@@ -41,7 +41,7 @@ public class RoleController {
         return iRoleService.save(role);
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public void deleteById(@PathVariable("id") Integer id) throws  Exception{
 
         iRoleService.deleteById(id);
